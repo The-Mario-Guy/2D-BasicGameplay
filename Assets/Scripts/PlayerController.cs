@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5;
-    public float xRange = 5;
+    public float xRange = 5.2f;
+    public GameObject projectilePrefab;
 
     private float _horizontalInput;
     // Start is called before the first frame update
@@ -17,6 +18,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerMovement();
+        
+        //Instantiate clones the object. First argument asks what object, 2nd asks where, 3rd asks what rotation
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+    }
+    void PlayerMovement()
+    {
+        //Horizontal movement only
         _horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector3.right * _horizontalInput * moveSpeed * Time.deltaTime);
