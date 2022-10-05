@@ -14,5 +14,9 @@ public class DestroyOoB : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if(transform.position.y < bottomBound)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
