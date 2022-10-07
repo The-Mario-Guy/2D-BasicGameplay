@@ -323,6 +323,9 @@ MonoBehaviour:
   - {fileID: 3402992717728196406, guid: 3c698605c1e33954dbe554195eda3f3d, type: 3}
   - {fileID: 2496312843025120645, guid: f49570e7c9c1a464c8fc24a02fe5b9e9, type: 3}
   - {fileID: 8186555597342031062, guid: 7662a88235970104f9dc3626a50c743f, type: 3}
+  - {fileID: 2612440360680160551, guid: 9a9ff9b3e3ef62643bddff668bd29c3c, type: 3}
+  - {fileID: 3402992717728196406, guid: 11b4578700571324cad787623da924bf, type: 3}
+  - {fileID: 3402992717728196406, guid: 3a8c8681aec14714e808bf07616f04cc, type: 3}
   spawnXRange: 5
   spawnYRange: 10
 --- !u!1 &1631793861
@@ -422,6 +425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ebd141a09ec444ba8ce892d5af6d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 12
+  moveSpeed: 20
   xRange: 5
   projectilePrefab: {fileID: 8434765663093117382, guid: b8678b6126a9a624ebb3aea6c59284c1, type: 3}
